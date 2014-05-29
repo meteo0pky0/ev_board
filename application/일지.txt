@@ -1,0 +1,3 @@
+2014-05-25 
+mvc 폴더에 ev_board폴더 생성
+application 폴더에 MY_Router(mvc 폴더에서 하위 폴더 사용가능하게 해줌)생성 
