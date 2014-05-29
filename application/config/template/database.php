@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'codenight';
-$db['default']['password'] = 'lswpky1004!';
-$db['default']['database'] = 'codenight_db';
-$db['default']['dbdriver'] = 'mysqli';
+$db['default']['hostname'] = '';
+$db['default']['username'] = '';
+$db['default']['password'] = '!';
+$db['default']['database'] = '';
+$db['default']['dbdriver'] = '';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
