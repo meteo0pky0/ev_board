@@ -34,7 +34,7 @@ class C_make extends CI_Controller {
 		$ev_email_last =  $this -> input -> post('ev_email_last');
 		$ev_email_all = $ev_email.".".$ev_email_last;
 		
-		$this-> encrypt -> encode($ev_pw);
+		$this-> encrypt -> encode($ev_pw);//다른보안법으로 패스워드를 넘겨야할수 있을지도...
 		//if($make_ck -> Msg_text != "OK"){
 		//$this->M_make->add($ev_id,$ev_pw,$ev_nick,$ev_email_all);
 		//}
