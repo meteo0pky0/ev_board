@@ -23,8 +23,19 @@ class Topic extends CI_Controller {
 		$this->_head();
 		
 		$topic = $this->topic_model->get($id);
-		$this->load->helper(array('url', 'HTML', 'korean'));
-		$this->load->view('get',array('topic'=>$topic));
+		//로그메세지를 html문서화 시킴
+		//log_message('info',var_export($topic,1));
+		
+
+		if(empty($topic)){
+			show_error('topic값이 없습니다.');//다른페이지로 옴긴후 에러메세지를 보여줌
+			if(count($topic)){ 
+				$this->load->helper(array('url', 'HTML', 'korean'));
+				$this->load->view('get',array('topic'=>$topic));
+			}
+		}
+
+		
 		$this->load->view('footer');
 	}
 

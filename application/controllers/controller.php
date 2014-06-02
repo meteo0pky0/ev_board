@@ -3,11 +3,11 @@
 class Controller extends CI_Controller {
 	public function index()
 	{
-		echo "ÄÁÆ®·ÑÀÔ´Ï´Ù.";
+		echo "ì»¨íŠ¸ë¡¤í˜ì´ì§€ ì…ë‹ˆë‹¤."; 
 		phpinfo();
 	}
 	public function one($num,$num2){
-		echo "one¸Ş¼­µå ÀÇ $num ÆÄ¶ó¹ÌÅÍ ÀÔ´Ï´Ù. $num2";
+		echo "oneë©”ì†Œë“œì˜  $num íŒŒë¼ë¯¸í„°  $num2";
 	}
 }
 
